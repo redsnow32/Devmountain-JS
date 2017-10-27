@@ -214,3 +214,47 @@ return obj;
 console.log(addValues(newObject,"Hi", "There!"));
 
 </script>
+<script type="text/javascript">
+
+var counting = {
+     up:function (x){
+     return x+=1;
+   },
+     down:function (){
+       return x-=1;
+     }
+   }
+   console.log(counting.up(3));
+
+ </script>
+
+ <!--Conditionals-->
+
+<script type="text/javascript">
+var testNumber = "fifteen";
+
+if(testNumber<10){
+  console.log("That is a small number");
+} else if (testNumber>=10) {
+  console.log("That is a large number");
+} else {
+  console.log("That is not a number");
+};
+
+</script>
+
+<script type="text/javascript">
+var testVehicle = {
+  type:"Truck",
+  color: "Red"
+};
+  if (testVehicle.type=="Truck"){
+    if (testVehicle.color=="Red"){
+      console.log("Red trucks go in Garage 1");
+    }else if (testVehicle.color=="Blue") {
+      console.log("Blue trucks go to Garage 2");
+    }
+    } else {
+    console.log("Only trucks allowed");
+  };
+</script>
