@@ -258,3 +258,27 @@ var testVehicle = {
     console.log("Only trucks allowed");
   };
 </script>
+
+<!--LOOPS-->
+<script type="text/javascript">
+var testArray = [];
+console.log(testArray);
+for(i=1;i<=100;i++){
+  testArray.push(i);
+};
+console.log(testArray);
+</script>
+
+<script type="text/javascript">
+var attendArray = [];
+function rsvp(yesOrNo,numOfGuests){
+  if (yesOrNo==true){
+    attendArray.push(true);
+    for(i=1;i<=numOfGuests;i++){
+      attendArray.push(true);
+    };
+  };
+};
+rsvp(true,65);
+console.log(attendArray);
+</script>
