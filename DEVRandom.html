@@ -305,21 +305,9 @@ function doesTW (num){
   return num;
 }
 }
-</script>
-
-<script type="text/javascript">
-
 
 doesTW(1);
   console.log (array);
-
-
-var startingNum= 0;
-
-function (num, startingNum){
-   if (numstartingNum)
-
-};
 
 </script>
 
@@ -333,4 +321,45 @@ function counting(num) {
   return startingNum;
 }
   counting(5);
+</script>
+
+<!--Iterating Loops -->
+<script type="text/javascript">
+var nameArray = ["Brandon"," J"," Allred"];
+text = "";
+  for (i=0;i<nameArray.length;i++){
+    text+=nameArray[i];
+  };
+
+console.log(text);
+
+</script>
+
+<script type="text/javascript">
+function changeEverything(arr,value){
+  for(i=0;i<arr.length;i++){
+    arr[i]=value
+  };
+  return arr
+};
+var testArray=[5,7,9,11];
+console.log (testArray);
+console.log(changeEverything(testArray,"This is a test"));
+
+</script>
+
+<script type="text/javascript">
+  function changeEverything1(obj,value) {
+    for (i in obj){
+      obj[i] = value;
+    };
+    return obj
+  };
+  var myObj = {
+    Thing1:1,
+    Thing2:2,
+    Thing3:3
+  };
+  console.log(changeEverything1(myObj,32));
+
 </script>
