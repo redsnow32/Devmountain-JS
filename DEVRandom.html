@@ -73,7 +73,6 @@ console.log(userSuperman23.userName);
 
 </script>
 
-
 <script type="text/javascript">
   var snowboardLocation = "Downstairs under the stairs.";
   var snowBootsLocation = "In the hall closet";
@@ -361,5 +360,33 @@ console.log(changeEverything(testArray,"This is a test"));
     Thing3:3
   };
   console.log(changeEverything1(myObj,32));
+
+</script>
+
+<script type="text/javascript">
+var personalInfo = {
+  twitter:"twitterName",
+  email:"b32alls@gmail.com",
+  firstName:"Brandon",
+  lastName:"Allred",
+};
+for(i in personalInfo){
+  personalInfo[i]="This is awesome!";
+  console.log(personalInfo[i]);
+};
+
+
+</script>
+
+<script type="text/javascript">
+var total = 0;
+function totalOfNumbers(arr){
+for(i=0;i<arr.length;i++){
+  total = arr[i]+total;
+}
+ return total;
+}
+var randomArray = [4,5,6,2];
+console.log(totalOfNumbers(randomArray));
 
 </script>
