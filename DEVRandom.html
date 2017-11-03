@@ -403,3 +403,81 @@ var crazyArr = ["Brandon", "Ashley", "Acelynn", "Everly"];
 console.log(findB(crazyArr));
 
 </script>
+<script type="text/javascript">
+
+var user11553 = {username:"JStudent01"};
+var instagram = "JMann22";
+var twitter = "JohnM22";
+//Create a function that adds properties to an object and then call the function.
+function updateSocialMedia(obj,string1,string2){
+
+  var IDs={
+    instagramID:instagram,
+    twitterID:twitter,
+  };
+  for(var i in obj){
+    obj[i]={
+      instagramID:instagram,
+      twitterID:twitter
+    };
+  return IDs;
+}
+}
+// updateSocialMedia(user11553,instagram,twitter);
+console.log(updateSocialMedia(user11553,instagram,twitter));
+</script>
+
+<!-- Dereks Code -->
+<script type="text/javascript">
+var arr1 = [6,6,6,6,6,6,6,3,3,3,3,3,3,3,3];
+// Create a function that will average all the even or odd numbers in an array.
+function averageArray (array,value){
+    var evenNums = [];
+    var oddNums = [];
+    var evenSum = 0;
+    var oddSum = 0;
+  for(var i=0;i<array.length;i++){
+    if (arr1[i] % 2 === 0) {
+        evenSum += arr1[i];
+        evenNums.push(arr1[i]);
+    } else {
+        oddSum += arr1[i];
+        oddNums.push(arr1[i]);
+    }
+  }
+
+  var evenAvg = evenSum / evenNums.length;
+  var oddAvg = oddSum / oddNums.length;
+
+  if(value==="evens"){
+    return evenAvg;
+  } else if (value==="odds"){
+    return oddAvg;
+  } else {
+    return "Input Invalid";
+  }
+}
+console.log(averageArray(arr1,"odds"));
+
+</script>
+
+<!--Brandons Code -->
+<script>
+var arr1 = [15,17,22,4,3,35,11,12,38,8];
+// Create a function that will average all the even or odd numbers in an array.
+function averageArray (array,value){
+  var evensArr = [];
+  var oddsArr = [];
+  var evenSum = 0;
+  var odsSum = 0;
+  for(i=0;i<array.length;i++){
+    if (arr1[i] %2===0){
+      evensArr.push[i];
+      evensNum.push(arr1[i])
+  } else if (arr[i]%2===1){
+      oddsArr.push[i];
+  } else {
+    "Not a number";
+   }  
+  }
+</script>
