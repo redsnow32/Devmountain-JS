@@ -463,21 +463,35 @@ console.log(averageArray(arr1,"odds"));
 
 <!--Brandons Code -->
 <script>
-var arr1 = [15,17,22,4,3,35,11,12,38,8];
+var arr1 = [13,11,23,5,4,33,13,10,48,18];
 // Create a function that will average all the even or odd numbers in an array.
 function averageArray (array,value){
   var evensArr = [];
   var oddsArr = [];
   var evenSum = 0;
-  var odsSum = 0;
+  var oddSum = 0;
   for(i=0;i<array.length;i++){
     if (arr1[i] %2===0){
-      evensArr.push[i];
-      evensNum.push(arr1[i])
-  } else if (arr[i]%2===1){
-      oddsArr.push[i];
+      evenSum += arr1[i];
+      evensArr.push(arr1[i]);
+      // return "evens";
+  } else if (arr1[i] %2===1){
+      oddSum +=arr1[i];
+      oddsArr.push(arr1[i]);
+      // return "odds";
   } else {
     "Not a number";
-   }  
+   }
+   evensAvg = evenSum/evensArr.length;
+   oddsAvg = oddSum/oddsArr.length;
   }
+
+  if (value==="evens"){
+    return evensAvg;
+  } else if (value==="odds"){
+    return oddsAvg;
+  } else
+return "Not a num";
+}
+console.log(averageArray(arr1,"evens"));
 </script>
