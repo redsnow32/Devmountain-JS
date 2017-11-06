@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
    var numFollowers = 30;
    numFollowers*=2;
    console.log(numFollowers);
@@ -427,6 +427,16 @@ function updateSocialMedia(obj,string1,string2){
 console.log(updateSocialMedia(user11553,instagram,twitter));
 </script>
 
+<script type="text/javascript">
+function upadatSocialMedia(obj,str1,str2){
+  obj.instagramID = str1;
+  obj.twitterID = str2;
+  return obj;
+}
+upadatSocialMedia(user11553,instagram,twitter);
+console.log(user11553)
+</script>
+
 <!-- Dereks Code -->
 <script type="text/javascript">
 var arr1 = [6,6,6,6,6,6,6,3,3,3,3,3,3,3,3];
@@ -471,11 +481,11 @@ function averageArray (array,value){
   var evenSum = 0;
   var oddSum = 0;
   for(i=0;i<array.length;i++){
-    if (arr1[i] %2===0){
+    if (arr1[i] %2==0){
       evenSum += arr1[i];
       evensArr.push(arr1[i]);
       // return "evens";
-  } else if (arr1[i] %2===1){
+  } else if (arr1[i] %2!=0){
       oddSum +=arr1[i];
       oddsArr.push(arr1[i]);
       // return "odds";
@@ -486,12 +496,58 @@ function averageArray (array,value){
    oddsAvg = oddSum/oddsArr.length;
   }
 
-  if (value==="evens"){
+  if (value=="evens"){
     return evensAvg;
-  } else if (value==="odds"){
+  } else if (value=="odds"){
     return oddsAvg;
   } else
 return "Not a num";
+}
+console.log(averageArray(arr1,"evens"));
+</script> -->
+
+<script type="text/javascript">
+var arr1 = [13,11,23,5,4,33,13,10,48,18]
+function averageArray (array,evensOrOdds){
+  var total = 0
+  var count = 0
+  for (var i = 0; i < array.length; i++) {
+    if (evensOrOdds=="evens") {
+      if (array[i]%2==0) {
+        total+=array[i];
+        count++
+      }
+    } else if (evensOrOdds=="odds") {
+      if (array[i]%2!==0)
+        total+=array[i];
+        count++;
+    };
+  };
+  return total/count;
+};
+console.log(averageArray(arr1,"odds"));
+</script>
+
+<script type="text/javascript">
+var arr1 = [15,17,22,4,3,35,11,12,38,8];
+// Create a function that will average all the even or odd numbers in an array.
+function averageArray (array,value){
+  var totalNum = 0;
+  var count = 0;
+  for(var i=0;i<array.length;i++) {
+    if (value==="evens") {
+      if (array[i]%2===0) {
+        totalNum += array[i];
+        count++;
+      }
+   }else if (value==="odds") {
+      if (array[i]%2!==0) {
+        totalNum += array[i];
+        count++;
+      };
+    };
+  };
+  return totalNum/count;
 }
 console.log(averageArray(arr1,"evens"));
 </script>
