@@ -551,3 +551,49 @@ function averageArray (array,value){
 }
 console.log(averageArray(arr1,"evens"));
 </script>
+
+
+<!--PRACTICE PROBLEMS-->
+<script type="text/javascript">
+var totalNum = 0;
+function sum (array){
+  var totalNum = 0;
+  for (var i=0;i<array.length;i++){
+    totalNum = array[i]+totalNum;
+  }
+  return totalNum;
+}
+var randomArray = [2,4,6];
+console.log(sum(randomArray));
+
+</script>
+<script type="text/javascript">
+function evenOrOdd (num){
+  // if (num==="even")
+    if (num%2===0){
+      return "The number is even";
+  }else if (num%2!==0){
+    return "The number is odd";
+  }
+}
+  console.log(evenOrOdd(2));
+
+</script>
+
+<script type="text/javascript">
+function sum (num1,num2){
+totalSum = num1+=num2;
+return totalSum;
+}
+console.log(sum(5,6));
+</script>
+
+<script type="text/javascript">
+var arr1 = [1,2,3,4,5];
+function first (array){
+arrayFirst = array[0];
+return arrayFirst;
+}
+
+console.log(first(arr1));
+</script>
