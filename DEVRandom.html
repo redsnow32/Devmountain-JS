@@ -612,6 +612,21 @@ function countingArray (array,num) {
 console.log(countingArray(emptyArray,number));
 
 </script>
+function isAdmin (obj){
+  for (var i in obj){
+    if (obj[i]===true){
+      return "Is admin";
+    }else if (obj[i]===false){
+      return "Not admin";
+    }
+  }
+  return obj;
+}
+var ranObj = {
+  "admin":false
+};
+console.log(isAdmin(ranObj))
+
 <!-- Put your HTML HERE, make sure to connect your index.css sheet -->
 <!DOCTYPE html>
 <html lang="english">
