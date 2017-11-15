@@ -1,0 +1,35 @@
+body {
+    padding: 25px;
+    margin:0px;
+}
+
+
+.first-container{
+    border: 5px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.rectangle { 
+    height: 150px;
+    width: 50px;
+    background-color: #2cc06e;
+    margin-top: 50px;
+    display: inline-block;
+}
+.square {
+    height: 200px;
+    width: 400px;
+    background-color: #c02b2b;
+    display: inline-block; 
+    margin: 0 25px;
+}
+.circle {
+    
+}
+.second-container {
+
+}
+.third-container{
+
+}
