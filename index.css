@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     padding: 10px;
 }
-.rectangle { 
+.rectangle {
     height: 150px;
     width: 50px;
     background-color: #2cc06e;
@@ -21,15 +21,44 @@ body {
     height: 200px;
     width: 400px;
     background-color: #c02b2b;
-    display: inline-block; 
+    display: inline-block;
     margin: 0 25px;
 }
 .circle {
-    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #2310c7;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 20px;
 }
 .second-container {
+    border: dotted black 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 25px;
+
+}
+.box {
+    width: 50%;
+    height: 200px;
+    background-color: yellow;
+    box-shadow: 3px 3px 5px 0;
 
 }
 .third-container{
+    width:50%;
+    border: solid 1px rgb(66, 66, 66);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 100px;
+    box-shadow: 3px 3px 5px 0;
+    margin: 25px auto;
+
+
+}
+.third-container h1{
 
 }
