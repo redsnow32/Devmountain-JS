@@ -1,0 +1,51 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    max-width: 1024px;
+    align-content: center;
+}
+
+.row {
+    height: 100px;
+    width: 100%;
+}
+
+.row-big {
+    height: 200px;
+    width: 100%;
+}
+
+.first-row {
+    background-color: rgb(223, 217, 217);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.first-row-div {
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    
+}
+
+.second-row {
+    background-color: #fefefe;
+    box-sizing: border-box;
+    padding: 50px;
+    font-size: 15pt;
+    font-style: helvetica;
+}
+
+.third-row {
+    background-color: rgb(24, 105, 180);
+}
+
+.fourth-row {
+    background-color: rgb(53, 182, 171);
+}
+.fifth-row {
+    background-color: rgb(80, 170, 114);
+}
+.sixth-row {
+    background-color: yellow;
+}
