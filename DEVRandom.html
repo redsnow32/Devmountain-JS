@@ -661,3 +661,35 @@ console.log(isAdmin(ranObj))
         </div>
     </body>
 </html>
+<!--Scope Functions-->
+<script type="text/javascript">
+
+var globalName = "Brandon";
+function myName (){
+  console.log("Hi, my name is " + globalName);
+}
+function myColor (){
+  var localColor = "red";
+}
+var myState = "Oregon";
+function stateUpdater (){
+  myState="Utah";{
+  }
+  return myState;
+}
+ console.log(myState);
+ stateUpdater(myState);
+ console.log(myState);
+
+function add (num) {
+  var localNum = 3;
+  function iAmClosure () {
+    localNum+=num; {
+      return localNum;
+    }
+  }
+  return iAmClosure(num);
+}
+// iAmClosure(4);
+add(2);
+</script>
