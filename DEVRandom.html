@@ -734,3 +734,49 @@ var friends = [];
 console.log(friends)
 
 </script>
+<script type="text/javascript">
+var myName = [{first:"YOURFIRSTNAME",last:"YOURLASTNAME"}];
+
+function makeName(firstName, lastName){
+  return firstName + " " + lastName;
+}
+
+var firstLast = [];
+  myName.map(myName => {
+    myName.first="Brandon",
+    myName.last="Allred"; {
+  }
+  return firstLast.push(makeName(myName.first,myName.last));
+});
+console.log(firstLast)
+
+</script>
+<script type="text/javascript">
+var futureStudents = [
+  {name: "Alex", age: 30},
+  {name: "Sara", age:20},
+  {name: "Mark", age: 13},
+  {name:"Charlotte", age: 3},
+  {name: "Taylor", age: 18}
+]
+var oldEnough = [];
+  futureStudents.filter(futureStudents => {
+    if(futureStudents.age>=18) {
+      return oldEnough.push(futureStudents)
+    }
+  })
+  console.log(oldEnough);
+
+</script>
+
+<script type="text/javascript">
+var futureStudents = [
+  {name: "Alex", age: 30},
+  {name: "Sara", age:20},
+  {name: "Mark", age: 13},
+  {name:"Charlotte", age: 3},
+  {name: "Taylor", age: 18}
+]
+var oldEnough = futureStudents.filter(student => student.age >= 18);
+
+</script>
