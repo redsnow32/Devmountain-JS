@@ -714,3 +714,23 @@ var gemInfo = (type,size,weight) => {
 console.log(gemInfo("Diamond","10","5"))
 
 </script>
+
+<script type="text/javascript">
+var people = [
+    {name: "Landy",friend: true},
+    {name: "Corey",friend: true},
+    {name: "Ted",friend: false},
+    {name: "Sperry",friend: true},
+    {name: "Bill",friend: false}
+  ];
+
+var friends = [];
+  people.forEach(function(people) {
+    if(people.friend===true) {
+      friends.push(people.name);
+    }
+    return(people.name)
+  });
+console.log(friends)
+
+</script>
