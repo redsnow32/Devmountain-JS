@@ -834,3 +834,29 @@ var Charles = new Puppy(100, 200, 300);
 
 
 </script>
+
+<script type="text/javascript">
+class Puppy {
+
+  constructor(happiness, energy, behavior) {
+    this.happiness = happiness
+    this.energy = energy
+    this.behavior = behavior
+  }
+  getsTreat(val) {
+    if(val===true) {
+      return this.happiness+=20;
+    }
+    return val;
+  }
+  takesNap (energy, behavior) {
+    energy = this.energy-=45;
+    behavior = this.behavior+=15;
+  }
+}
+
+var Charles = new Puppy(75, 25, 30)
+Charles.takesNap();
+Charles.getsTreat(true)
+
+</script>
