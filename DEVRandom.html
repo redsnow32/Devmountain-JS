@@ -966,5 +966,51 @@ console.log(a);
 <script type="text/javascript">
 //arrow FUNCTIONS
 
+foo = () => 2;
+/*=> and function are the same thing.
+foo is the function name. (are the parameters) 2 is what's returned.
+*/
+function foo () {
+  return 2;
+}
+() => 3
+_ => 3
+
+//the above are placeholders for
+
+//if you need to return an object, see below. () are required on the outside of the {}
+x => ({y: x})
+// no way to give an arrow function a name. they are syntactically anonomys
+</script>
+
+<script type="text/javascript">
+//Block Scoping
+function foo(x.y) {
+var z = bar (x * 2);
+  //Let's can't be redifined further down the code.
+  if (x > y) {
+    let tmp = x;
+    x = y;
+    y = tmp;
+  }
+  for (let i=0; i<10; i++)
+}
+
+//let keyword enforces at the compiler level what we already stylisically signaling.  Where you wanted it to block scoped
+
+//const is a variable that cannot be redifined.
+
+function foo(x,y) {
+  if (x > y) {
+    {const x = 2, y = x * 3;
+    }
+  }
+}
+
+//x cannot be redifined. if you try assigning x, it will fail. Don't use const that often. Var mostly, Let then const.
+const x = 3;
+
+
+
 
 </script>
