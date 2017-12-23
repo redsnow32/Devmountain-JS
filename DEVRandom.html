@@ -1253,3 +1253,48 @@ const classInstance = new Thing()
 
 console.log(classInstance) // because I made a new version of Thing instead of Person, my object is now {name: 'thing'}`
 </script>
+
+
+<script type="text/javascript">
+function centsInDollar () {
+  return 100;
+}
+
+function addition (num1, num2) {
+  return num1+num2;
+}
+
+console.log(addition(2,2));
+
+function myOutfit (temp, weather) {
+  if(temp>=72 && weather==="rainy") {
+    return "shorts and t-shirt, bring umbrella";
+  } else if(temp >= 72 && weather === "sunny") {
+    return "shorts and t-shirt";
+  } else if(temp <= 72 && weather === "rainy") {
+    return "long pants and rain coat";
+  } else if(temp <= 72 && weather === "sunny"){
+    return "long pants and sweater";
+  }
+};
+
+console.log(myOutfit (71,"rainy"));
+
+function last (arr) {
+  return arr.slice(-1) [0];
+}
+
+
+
+
+var myArray = [];
+function arrayFiller (num) {
+  for(var i = 0; i < num; i++) {
+    myArray.push("item");
+  }
+  return myArray;
+}
+console.log(arrayFiller(4));
+
+
+</script>
