@@ -1296,5 +1296,59 @@ function arrayFiller (num) {
 }
 console.log(arrayFiller(4));
 
+function canDrive (person) {
+  if(person.age>=16) {
+    return person.name + " is old enough to drive.";
+  } else if (person.age <= 16) {
+    return person.name + " is not old enough to drive.";
+  }
+}
+
+var person = {
+  name: "Brandon",
+  age: 29
+};
+
+canDrive(person);
+
+function changeEmail (user, newEmail) {
+ user.email = newEmail;
+
+return user;
+}
+
+var user = {
+  name: "Brandon",
+  email: "B32alls@gmail.com"
+};
+
+changeEmail(user, "b.allred@employeereferrals.com");
+
+function addRole (user, str) {
+  user.role = str;
+  return user;
+}
+
+var user = {
+  name: "Brandon",
+  age: 29
+};
+
+addRole(user,"account manager")
+
+function looper (arr) {
+  for(var i = 0; i < arr.length; i++) {
+    arr[i]+=5;
+  }
+    return arr;
+}
+
+var arr = [10, 20, 30];
+
+looper(arr);
+
+
+
+
 
 </script>
