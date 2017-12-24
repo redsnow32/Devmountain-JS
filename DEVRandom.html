@@ -1377,5 +1377,32 @@ function reverse (string) {
 
 reverse("this is my sentence");
 
+function removeItem (par1, item) {
+  for(var i = 0; i <= myGroceryList.length; i++) {
+    if(myGroceryList[i] == item){
+      myGroceryList.splice([i],1);
+    }
+  }
+  return myGroceryList;
+}
+
+function addItem (myGroceryList, item) {
+  for(var i = 0; i <= myGroceryList.length; i++) {
+      // if(myGroceryList[i]) {
+      //   console.log(myGroceryList[i]);
+      // } else if (par2!== myGroceryList[i]) {
+        myGroceryList.push(item);
+        break;
+  }
+  return myGroceryList;
+}
+
+
+var myGroceryList = ["candy", "steaks", "eggs", "cheese"];
+
+removeItem(myGroceryList,"eggs");
+
+addItem(myGroceryList,"Juice");
+
 
 </script>
