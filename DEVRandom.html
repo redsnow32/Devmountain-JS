@@ -1347,8 +1347,35 @@ var arr = [10, 20, 30];
 
 looper(arr);
 
+function truthyObject (user) {
+  for(var val in user) {
+    if(user[val]) {
+      console.log(user[val]);
+    } else {
+      delete user[val];
+    }
+  }
+  return user;
+}
+
+var user = {
+  name: "Brandon",
+  age: 29,
+  job:""
+};
+
+truthyObject(user);
 
 
+function reverse (string) {
+  var newStr = "";
+  for(var i = string.length -1; i >= 0; i--) {
+    newStr += string[i];
+  }
+  return newStr;
+}
+
+reverse("this is my sentence");
 
 
 </script>
