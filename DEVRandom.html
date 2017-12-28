@@ -1430,5 +1430,69 @@ function maker () {
 
 maker();
 
+var evens = []; // Do not edit this line.
+var odds = []; // Do not edit this line.
+
+var nums = [19, 32, 24, 7, 3, 10];
+
+
+function oddsAndEvens (nums) {
+  for(var i = 0; i < nums.length; i++) {
+    if(nums[i]%2===0) {
+      evens.push(nums[i]);
+      // console.log(evens);
+    } else if (nums[i]%2!==0) {
+      odds.push(nums[i]);
+      // console.log(odds);
+    }
+  }
+  return evens;
+}
+
+
+
+oddsAndEvens(nums);
+
+function findInArray (arr, par2) {
+  for(var i = 0; i < arr.length; i++) {
+    if(arr[i]===par2) {
+      return(true);
+    }
+  }
+  return false;
+}
+
+var arr = [20, 30, 40];
+
+findInArray(arr, 30);
+
+function removeItem (gList1, item) {
+  for(var i = 0; i < gList1.length; i++) {
+    if(gList1[i] === item){
+      gList1.splice([i],1);
+    }
+  }
+  return gList1;
+}
+
+function addItem (gList2, item2) {
+  var existingItem = false;
+  for(var i = 0; i < gList2.length; i++) {
+   if(gList2[i]===item2) {
+     existingItem = true;
+   }
+  }
+   if (existingItem===false) {
+     gList2.push(item2);
+  }
+  return gList2;
+}
+
+var myGroceryList = ["candy", "steaks", "eggs", "cheese"];
+
+removeItem(myGroceryList,"eggs");
+
+addItem(myGroceryList,"candy");
+
 
 </script>
