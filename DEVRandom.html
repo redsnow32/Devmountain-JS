@@ -1613,6 +1613,10 @@ var longerArray = longer(arr1, arr2); // This is for testing purposes. Do not ch
 
 var myVar = [1, "brandon", true, [1, 2, 3], "other string", {power: 9001} ];
 
+let myNewArr = [1,2,3,4,5,6,7,8,9,0]
+
+let finalArr = [];
+
 let myObj = {
   name: "brandon",
   power: 9001,
@@ -1624,31 +1628,66 @@ let myObj = {
 
 for(var i = 0; i < myArr.length; i++) {
   if(i % 2 === 0) {
-    console.log(i);
+    console.log(myNewArr[i]);
+    finalArr.push("This is the newly aded itema iwht the value of:" + i)
   }
+  console.log("My final array is" ,finalArr)
 }
 
 //For in Loops
 
-for(let key in myObj) {
-  console.log(myObj[key]);
-}
+// for(let key in myObj) {
+//   console.log(myObj[key]);
+// }
 
 // While loops
+//
+// let userNum = 7;
+// let compNum = 0;
+// while (userNum !== compNum) {
+//   compNum++;
+//   console.log(compNum);
+// }
+// console.lop("the while loop has finished.")
 
-let userNum = 7;
-let compNum = 0;
-while (userNum !== compNum) {
-  compNum++;
-  console.log(compNum);
-}
-console.lop("the while loop has finished.")
+//do/while loops run the code first before checking condition
 
-//do loops run the code first before checking condition
+// do {
+//   compNum ++  // compNum = 8 so userNum will never = compNum
+//   console.log(compNum)
+// } while (userNum !== compNum);
+// console.log("The do loop has finished")
 
-do {
-  compNum ++
-  console.log(compNum)
-} while ()
+// reverse loops
+
+// for(var i = myArr.length - 1; i > 0; i--) {
+//   console.log(myArr[i]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
