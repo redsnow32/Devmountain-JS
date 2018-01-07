@@ -1755,12 +1755,91 @@ reversedLooper(arr);
  dog3.play(3);
  console.log(dog3.hunger);
 
+var thing = "";
+thing === 5 ? console.log("True"):
+console.log("nope");
+
+
+// name can equal 3 things:
+// "Jeff", "Derek", "Brandon". jeff && "This is dad"
+//  Derek && "This is brother" Brandon "This is me";
+let name = "Brandon";
+
+if (name=== "jeff") {
+  console.log("This is Dad.")
+} else if (name === "Derek") {
+  console.log("This is brother")
+} else if (name === "Brandon") {
+}
+
+
+  console.log("This is me")
+
+switch (name) {
+  case "Jeff":
+  console.log("This is Dad")
+  break;
+
+  case "Derek":
+  console.log("This is brother")
+  break;
+
+  case "Brandon":
+  console.log("This is me")
+  break;
+}
 
 
 
+function reversedLooper (arr) {
+  var reversedArr = [];
+  var addArr = [2, 1, 0, -1, -2];
+  for(var i = arr.length - 1; i >= 0; i--) {
+    // if(arr.length == addArr.length) {
+    //   reversedArr.push(arr[i]+=addArr[i]);
+    //   // reversedArr.push(addArr[i]+=1)
+    //   console.log(reversedArr);
+    // }
+
+    if (arr.length >= addArr.length) {
+      reversedArr.push(arr[i]);
+    }
+    switch (reversedArr[i]) {
+
+      case reversedArr[0]:
+        reversedArr[0]+=-2;
+        console.log(reversedArr[0])
+        break;
+
+      case reversedArr[1]:
+        reversedArr[1]+=-1;
+        console.log(reversedArr[1])
+        break;
+
+      case reversedArr[2]:
+        reversedArr[2]+=0;
+        break;
+
+      case reversedArr[3]:
+        reversedArr[3]+=1;
+        break;
+
+      case reversedArr[4]:
+        reversedArr[4]+=2
+        break;
+
+      // default :
+      //   reversedArr[i]+=1
+      //   break;
+    }
+
+  }
+  return reversedArr;
+}
 
 
-
+var arr = [2, 4, 6, 8, 10];
+reversedLooper(arr);
 
 
 
