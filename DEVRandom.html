@@ -1795,12 +1795,6 @@ function reversedLooper (arr) {
   var reversedArr = [];
   var addArr = [2, 1, 0, -1, -2];
   for(var i = arr.length - 1; i >= 0; i--) {
-    // if(arr.length == addArr.length) {
-    //   reversedArr.push(arr[i]+=addArr[i]);
-    //   // reversedArr.push(addArr[i]+=1)
-    //   console.log(reversedArr);
-    // }
-
     if (arr.length >= addArr.length) {
       reversedArr.push(arr[i]);
     }
@@ -1841,6 +1835,60 @@ function reversedLooper (arr) {
 var arr = [2, 4, 6, 8, 10];
 reversedLooper(arr);
 
+
+
+
+
+function reversedLooper (arr) {
+  var reversedArr = [];
+  var addArr = [2, 1, 0, -1, -2];
+  for(var i = arr.length - 1; i >= 0; i--) {
+    if (arr.length >= addArr.length) {
+      reversedArr.push(arr[i]);
+      console.log(reversedArr)
+    }
+  }
+    return reversedArr;
+  }
+
+  function reversedChecker (arr) {
+  for(var x = 0; x <= reversedArr.length; x++) {
+
+    switch (reversedArr[i]) {
+
+      case reversedArr[0]:
+        reversedArr[0]+=-2;
+        console.log(reversedArr[0]);
+        break;
+
+      case reversedArr[1]:
+        reversedArr[1]+=-1;
+        console.log(reversedArr[1])
+        break;
+
+      case reversedArr[2]:
+        reversedArr[2]+=0;
+        break;
+
+      case reversedArr[3]:
+        reversedArr[3]+=1;
+        break;
+
+      case reversedArr[4]:
+        reversedArr[4]+=2
+        break;
+
+      // default :
+      //   reversedArr[i]+=1
+      //   break;
+    }
+  }
+  return reversedArr;
+}
+
+
+var arr = [2, 4, 6, 8, 10];
+reversedLooper(arr);
 
 
 
