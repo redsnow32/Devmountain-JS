@@ -1,0 +1,71 @@
+
+/* .main_header {
+    width: 100%;
+    height: 55px;
+    background: gray;
+}
+
+.column {
+    height: 300px;
+    width: 30%;
+    background: blueviolet;
+    margin-right: 32px;
+    float: left;
+}
+.column_header {
+    background-color: fuchsia;
+    
+}
+.column_header li {
+    font-size: #fff;
+    color: white;
+    display: inline-block;
+
+} */
+
+.top_section {
+    width: 100%;
+    height: 100vh;
+    background: url("heroBG.jpg") no-repeat center;
+    background-size: cover;
+}
+.logo {
+    color:white;
+    font-size: 30px;
+    float: left;
+    font-family: arial;
+    margin: 20px 0px 15px 60px
+    
+
+}
+
+.main_header {
+    width: 100%;
+    height: 65px;
+    background-color:blue;
+    background: transparent;
+    border-bottom: 2px;
+    border-color:white;
+
+}
+/* .main_header h2 {
+    font: arial;
+    color: white;
+    margin: 20 0 20 60;
+} */
+.main_nav {
+    background: red;
+    width: 80%;
+    /* margin: auto; */
+    float:right;
+    margin: 20px 0px 20px 40px;
+
+}
+.main_nav li {
+    display: inline-block;
+    margin-left: 32px;
+    color: #fff;
+    font-family:arial;
+}
+
+
